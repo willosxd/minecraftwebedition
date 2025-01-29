@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="main-menu">
+    <div class="menu-container">
+      <div class="logo">
+        <img src="https://files.catbox.moe/weqknl.webp" alt="Minecraft Logo">
+      </div>
+      <div class="menu-buttons">
+        <button id="singleplayer-btn" class="menu-button">Singleplayer</button>
+        <button id="multiplayer-btn" class="menu-button">Multiplayer</button>
+        <div class="horizontal-buttons">
+          <button id="options-btn" class="menu-button">Options</button>
+          <button id="quit-btn" class="menu-button">Quit Game</button>
+        </div>
+      </div>
+      <div id="multiplayer-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Multiplayer</h2>
+          <div class="server-connection">
+            <input type="text" id="server-address" placeholder="Enter Server Address" value="localhost:8080">
+            <button id="connect-server-btn" class="menu-button">Connect</button>
+          </div>
+          <div id="server-status"></div>
+        </div>
+      </div>
+      <div class="menu-footer">
+        <div class="footer-left">
+          <span>Minecraft 1.0.0</span>
+        </div>
+        <div class="footer-right">
+          <span>Copyright Mojang 2011</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <div id="crosshair"></div>
+    <div id="inventory">
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+      <div class="inventory-slot"></div>
+    </div>
+  </div>
+
+  <script type="module" src="menu.js"></script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>

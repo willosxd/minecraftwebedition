@@ -1,0 +1,6 @@
+{
+  "name": "minecraft-webgl",
+  "version": "1.0.0",
+  "description": "Minecraft-like WebGL game - Super Flat World",
+  "type": "module"
+}
